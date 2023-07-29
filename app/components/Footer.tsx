@@ -1,6 +1,6 @@
 'use client'
 import Link from "next/link";
-import { FacebookIcon, TwitterIcon, InstagramIcon } from "lucide-react";
+import { Icons } from './Icons';
 
 const Footer = () => {
   return (
@@ -25,15 +25,15 @@ const Footer = () => {
               Privacy Policy
           </Link>
           <div className="ml-4 flex">
-            <FacebookIcon
+            <Icons.Facebook
               className="text-black hover:text-blue-900"
               size={24}
             />
-            <TwitterIcon
+            <Icons.Twitter
               className="text-black hover:text-blue-500 ml-4"
               size={24}
             />
-            <InstagramIcon
+            <Icons.Instagram
               className="text-black hover:text-pink-700 ml-4"
               size={24}
             />

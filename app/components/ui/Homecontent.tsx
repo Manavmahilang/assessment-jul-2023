@@ -15,32 +15,7 @@ const features = [
   },
 ]
 export default function HomeContent() {
-
-  ///// added contents
-  const delay = 5000
-  const images = [
-    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1682083353_Web_Home_Bannerfdsfds.jpg",
-    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1681816172_Web_Home_Bannersvdvds.jpg",
-    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1681816867_Web_Home_Bannersguguui.jpg",
-    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1671640109_Web_Home_Kareena.jpg",
-    "https://www.netmeds.com/images/cms/aw_rbslider/slides/1681400129_Web_Home_Bannerggr.jpg",
-  ];
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentImageIndex(
-        currentImageIndex === images.length - 1 ? 0 : currentImageIndex + 1
-      );
-    }, delay);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, [currentImageIndex, delay]);
-
-
-  ////////////
+  
   return (
 
     <div className="overflow-hidden bg-white sm:py-32 leading-normal rounded-t">

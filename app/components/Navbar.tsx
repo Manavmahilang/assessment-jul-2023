@@ -1,13 +1,12 @@
 import { authOptions } from '../lib/auth';
 import { getServerSession } from 'next-auth';
 import Link from 'next/link';
-import { ThemeToggle } from './ThemeToggle';
 import { buttonVariants } from './ui/Button';
 import SignInButton from './ui/SignInButton';
 import SignOutButton from './ui/SignOutButton';
 import { Icons } from './Icons';
 import SearchBar from './ui/SearchBar';
-import Image from 'next/image';
+
 
 const Navbar = async () => {
   const session = await getServerSession(authOptions);
@@ -23,10 +22,6 @@ const Navbar = async () => {
         </Link>
         <div className="flex-grow">
           <SearchBar />
-          {/*<div className='md:hidden'>
-          <ThemeToggle />
-        </div>
-  <ThemeToggle />*/}
         </div>
         <div className='hidden md:flex gap-4'>
           <Link
