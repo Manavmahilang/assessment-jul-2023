@@ -62,16 +62,16 @@ const ContactPage = () => {
             <div className="grid grid-cols-2 mt-4">
               <div className="col-md-4">
                 <label className="block text-black text-sm font-bold mb-2" htmlFor="subject">Subject:</label>
-                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Subject" name="subject" id="subject" />
+                <input className=" bg-white text- black shadow appearance-none border rounded w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline" placeholder="Subject" name="subject" id="subject" />
               </div>
               <div className="col-md-4">
                 <label className="block text-black text-sm font-bold mb-2" htmlFor="contact">Contact:</label>
-                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" pattern="^\d{10}$" placeholder="123456789" name="contact" type="tel" id="contact" />
+                <input className=" bg-white shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" pattern="^\d{10}$" placeholder="123456789" name="contact" type="tel" id="contact" />
               </div>
             </div>
             <div className="mt-4">
               <label className="block text-black text-sm font-bold mb-2" htmlFor="queryType">Query or Problem Type:</label>
-              <select className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="queryType" id="queryType" >
+              <select className="bg-white shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" name="queryType" id="queryType" >
                 <option value="">Select an option</option>
                 <option value="general">General Inquiry</option>
                 <option value="technical">Technical Issue</option>
@@ -81,7 +81,7 @@ const ContactPage = () => {
             </div>
             <div className="mt-4">
               <label className="block text-black text-sm font-bold mb-2" htmlFor="description">Description:</label>
-              <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Description" name="description" id="description" rows={8} />
+              <textarea className="bg-white shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" placeholder="Description" name="description" id="description" rows={8} />
             </div>
             <div className="flex justify-center mt-4">
               <button className={buttonVariants({ variant: 'subtle' })} type="submit">Submit</button>
