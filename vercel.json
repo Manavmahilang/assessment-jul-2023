@@ -1,8 +1,0 @@
-{
-  "name": "assessment-jul-2023",
-  "version": "1.0.0",
-  "build": {
-    "target": "vercel-next.js"
-  },
-  "lint": false
-}
