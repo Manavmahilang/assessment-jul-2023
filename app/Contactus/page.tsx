@@ -40,7 +40,7 @@ const ContactPage = () => {
 
   return (
     <>
-    <div className="container my-10 mx-auto p-5 md:p-10">
+    <div className="bg-white text-black container my-10 mx-auto p-5 md:p-10">
       <h1 className="text-3xl font-bold mb-4">Contact Us</h1>
       <div className="flex flex-col md:flex-row">
         {/* Left Container with Image */}
