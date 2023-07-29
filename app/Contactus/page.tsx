@@ -29,8 +29,13 @@ const ContactPage = () => {
       title: 'Data Successfully Saved',
       message: 'Our Executives Will call you shortly',
       type: 'success',
-    });
-    
+    }); 
+  }
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    await action(formData);
   }
 
   return (
@@ -53,7 +58,7 @@ const ContactPage = () => {
         </div>
         {/* Right Side Contact Form */}
         <div className="md:w-2/3 mt-4 md:mt-0 sm:mt-12">
-          <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 md:mt-4" action={action}>
+          <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 md:mt-4" onSubmit={handleSubmit}>
             <div className="grid grid-cols-2 mt-4">
               <div className="col-md-4">
                 <label className="block text-black text-sm font-bold mb-2" htmlFor="subject">Subject:</label>

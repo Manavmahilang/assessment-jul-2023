@@ -15,7 +15,7 @@ export default async function Product() {
                     {/*<h2 className="text-2xl font-bold tracking-tight text-gray-900">Shop by Category</h2> */}
                     <Category />
                     <HealthConcern />
-                    <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                    {/*<div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                         {product?.map(product => (
                             <div key={product.id} className="group relative">
                                 <div className="min-h-80 aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
@@ -34,7 +34,7 @@ export default async function Product() {
                                 </div>
                             </div>
                         ))}
-                    </div>
+                    </div>*/}
                 </div>
             </div>
         );
