@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import Link from "next/link";
 
 interface Product {
@@ -45,7 +46,7 @@ const products: Product[] = [
 const TopBrandsCard = ({ product }: { product: Product }) => (
   <div className="flex flex-col items-center space-y-4">
     <div className="w-60 h-60 relative">
-      <img src={product.image} alt={product.name} className="h-full w-full object-cover object-center lg:h-full lg:w-full" />
+      <Image src={product.image} alt={product.name} height={100} width={100} className="h-full w-full object-cover object-center lg:h-full lg:w-full" />
       <Link href={{ pathname: `/Productdetails/p4`, query: { id: JSON.stringify('p4') } }}>
         <span aria-hidden="true" className="absolute inset-0"></span>
 

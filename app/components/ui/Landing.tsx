@@ -27,7 +27,7 @@ export default function Landing() {
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              <span className='text-black'>Ayurheals,</span> India's bootstrapped online ayurvedic pharmacy
+              <span className='text-black'>Ayurheals,</span> India&apos;s bootstrapped online ayurvedic pharmacy
             </h1>
             <p className="mt-6 text-lg leading-8 text-white">
               With over 100 years of experience in dispensing quality medicines. We provide authentic and branded Ayurvedic, Herbal, Siddha, Unani Medicines.

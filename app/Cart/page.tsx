@@ -1,7 +1,6 @@
 'use client'
 import { Fragment, useState } from 'react'
-import { Dialog, Transition } from '@headlessui/react'
-import { XMarkIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image';
 import Link from 'next/link';
 
 
@@ -32,7 +31,7 @@ const products: Product[] = [
     id: 2,
     name: 'Dabur Chyawanprash',
     href: '#',
-    color: '– 950gm, 2X/3X Immunity, helps build Strength and for Stamina',
+    color: '950gm, 2X/3X Immunity, helps build Strength and for Stamina',
     price: 'Rs 32.00',
     quantity: 1,
     imageSrc: 'https://m.media-amazon.com/images/I/71tH6y4K-SL._SX679_.jpg',
@@ -58,10 +57,12 @@ export default function Cart() {
             {products.map((product) => (
               <li key={product.id} className="flex py-6">
                 <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
-                  <img
+                  <Image
                     src={product.imageSrc}
                     alt={product.imageAlt}
                     className="h-full w-full object-cover object-center"
+                    height={100}
+                    width={100}
                   />
                 </div>
 

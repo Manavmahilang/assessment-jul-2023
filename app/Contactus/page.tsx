@@ -4,7 +4,7 @@ import { createcont } from "../_action";
 import { buttonVariants } from "../components/ui/Button";
 import { toast } from "../components/ui/toast";
 import Footer from "../components/Footer";
-
+import Image from "next/image";
 
 const ContactPage = () => {
 
@@ -21,7 +21,7 @@ const ContactPage = () => {
         type: 'error',
       })
 
-      return;
+      return ;
     }
 
     await createcont(subject, description, contact, query)
@@ -30,6 +30,7 @@ const ContactPage = () => {
       message: 'Our Executives Will call you shortly',
       type: 'success',
     });
+    
   }
 
   return (
@@ -40,9 +41,11 @@ const ContactPage = () => {
         {/* Left Container with Image */}
         <div className="md:w-1/3 relative sm:mb-10">
           <div className="pt-14 pb-6 md:pb-0 w-full h-64 md:h-80 lg:h-96">
-            <img
+            <Image
               src="https://images.pexels.com/photos/8867482/pexels-photo-8867482.jpeg"
               alt="Background Image"
+              height={300}
+              width={300}
               className="w-full md:w-auto border rounded h-full object-cover"
             />
             <p className="text-l text-black text-center mt-4 sm:mb-8">Short description here Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum sit ducimus, quod architecto exercit</p>

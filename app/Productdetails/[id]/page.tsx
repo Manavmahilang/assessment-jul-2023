@@ -4,6 +4,7 @@ import { StarIcon } from '@heroicons/react/20/solid';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'next/navigation';
 import React from 'react';
+import Image from 'next/image';
 
 
 interface Product {
@@ -78,10 +79,9 @@ const ProductDetails = () => {
         {/* Image gallery */}
         <div className="mx-auto mt-6 max-w-xl sm:px-6 max-h-100  lg:gap-x-8 lg:px-8">
           <div className="aspect-h-2 aspect-w-2 hidden overflow-hidden rounded-lg lg:block">
-            <img
+            <Image
               src={product.image}
-              className="h-full w-full object-cover object-center rounded-md"
-            />
+              className="h-full w-full object-cover object-center rounded-md" alt={' product here'}            />
           </div>
         </div>
         {/* Product info */}

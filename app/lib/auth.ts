@@ -62,7 +62,7 @@ export const authOptions: NextAuthOptions = {
       }
     },
     redirect() {
-      return '/Contactus'
+      return '/'
     },
   },
 }

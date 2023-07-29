@@ -1,5 +1,7 @@
 'use client'
 
+import Image from "next/image";
+
 interface Product {
   id: number;
   name: string;
@@ -43,7 +45,7 @@ const products: Product[] = [
 const CategoryCard = ({ product }: { product: Product }) => (
   <div className="flex flex-col items-center space-y-4">
     <div className="w-60 h-60 relative">
-      <img src={product.image} alt={product.name}  className="h-full w-full object-cover object-center lg:h-full lg:w-full" />
+      <Image src={product.image} alt={product.name} height={400} width={400}  className="h-full w-full object-cover object-center lg:h-full lg:w-full" />
     </div>
     <div className="text-lg font-semibold text-center px-2">{product.name}</div>
     <div className="text-gray-500 text-sm text-center pb-4">{product.discount}% off</div>

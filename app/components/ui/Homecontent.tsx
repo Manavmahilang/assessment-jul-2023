@@ -1,23 +1,18 @@
-'use client'
+import Image from "next/image";
 
-import { useState, useEffect } from "react";
-
-const features = [
-  {
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-
-  },
-  {
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-
-  },
-]
 export default function HomeContent() {
-  
-  return (
+  const features = [
+    {
+      description:
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    },
+    {
+      description:
+        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    },
+  ];
 
+  return (
     <div className="overflow-hidden bg-white sm:py-32 leading-normal rounded-t">
       <div className="mx-auto max-w-7xl lg:px-4">
         <div className="flex flex-col lg:flex-row lg:space-x-8">
@@ -30,8 +25,8 @@ export default function HomeContent() {
                 iste dolor cupiditate blanditiis ratione.
               </p>
               <dl className="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                {features.map((feature) => (
-                  <div className="relative pl-9">
+                {features.map((feature, index) => ( 
+                  <div key={index} className="relative pl-9">
                     <dd className="inline">{feature.description}</dd>
                   </div>
                 ))}
@@ -39,14 +34,16 @@ export default function HomeContent() {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <img
+            <Image
               src="https://images.pexels.com/photos/2565761/pexels-photo-2565761.jpeg"
               alt="Hemp Oil Placeholder Image"
+              height={800}
+              width={800}
               className="w-full h-3/4 max-h-screen object-cover rounded-xl shadow-xl ring-1 ring-gray-400/10"
             />
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

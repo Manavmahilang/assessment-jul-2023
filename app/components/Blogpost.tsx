@@ -1,5 +1,7 @@
 // components/BlogPost.tsx
+import Image from 'next/image';
 import React from 'react';
+
 
 const BlogPost: React.FC = () => {
   return (
@@ -14,7 +16,7 @@ const BlogPost: React.FC = () => {
           <a className="relative block group" href="#0">
             <div className="absolute inset-0 bg-orange-300 hidden md:block transform md:translate-y-2 md:translate-x-4 xl:translate-y-4 xl:translate-x-8 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out pointer-events-none" aria-hidden="true"></div>
             <figure className="relative h-0 pb-[56.25%] md:pb-[75%] lg:pb-[56.25%] overflow-hidden transform md:-translate-y-2 xl:-translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out">
-              <img className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src="https://images.pexels.com/photos/105028/pexels-photo-105028.jpeg" width="540" height="303" alt="Blog post" />
+              <Image className="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out" src="https://images.pexels.com/photos/105028/pexels-photo-105028.jpeg" width="540" height="303" alt="Blog post" />
             </figure>
           </a>
           <div>
@@ -36,7 +38,7 @@ const BlogPost: React.FC = () => {
             <p className="text-lg text-black flex-grow">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat.</p>
             <footer className="flex items-center mt-4">
               <a href="#0">
-                <img className="rounded-full flex-shrink-0 mr-4" src="https://preview.cruip.com/open-pro/images/news-author-04.jpg" width="40" height="40" alt="Author 04" />
+                <Image className="rounded-full flex-shrink-0 mr-4" src="https://preview.cruip.com/open-pro/images/news-author-04.jpg" width="40" height="40" alt="Author 04" />
               </a>
               <div>
                 <a className="font-medium text-black hover:text-gray-100 transition duration-150 ease-in-out" href="#0">Some Guy</a>

@@ -6,6 +6,7 @@ import SignInButton from './ui/SignInButton';
 import SignOutButton from './ui/SignOutButton';
 import { Icons } from './Icons';
 import SearchBar from './ui/SearchBar';
+import Image from 'next/image';
 
 
 const Navbar = async () => {
@@ -17,7 +18,7 @@ const Navbar = async () => {
 
         <Link href='/' className='display inline-ce group'>
           <div className='w-10 h-10 rounded-full overflow-hidden group-hover:scale-110 transition-transform'>
-            <img src='/./favicon.ico' alt='Ayurheals' width={50} height={50} className='w-full h-full' />
+            <Image src='/favicon.ico' alt='Ayurheals' width={50} height={50} className='w-full h-full' />
           </div>
         </Link>
         <div className="flex-grow">
